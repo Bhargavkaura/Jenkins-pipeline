@@ -8,14 +8,14 @@ pipeline{
                                   }
 		stage ( 'Test' ) {
 		     steps{
-                       sh "' sleep 10
-			     echo "This is Test phase" "'  
+                       sh ''' sleep 10
+			     echo "This is Test phase" '''  
 			  }	
                                  }
 		stage ( 'Deploy' ){
 		      steps{
-			sh "' sleep 10
-		 	      echo "This is Deploy Phase" "'  
+			sh ''' sleep 10
+		 	      echo "This is Deploy Phase" ''' 
    			   }			
 	 			  }
 
